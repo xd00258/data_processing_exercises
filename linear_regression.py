@@ -1,6 +1,6 @@
 #Linear Regression salary problem
 
-#--PREPROCESS DATA--
+#------PREPROCESS DATA------
 
 #import libraries
 import numpy as np
@@ -18,7 +18,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 1/3, rando
 
 #no feature scaling needed
 
-#--Linear regression--
+#------Linear regression------
 
 #linear regressor to fit
 from sklearn.linear_model import LinearRegression
@@ -38,7 +38,7 @@ plt.show()
 
 #visualizing test set result
 plt.scatter(X_test, y_test, color = 'red')
-plt.plot(X_train, regressor.predict(X_train), color = 'blue')
+plt.plot(X_train, regressor.predict(X_train), color = 'blue') #doesnt change because we want to see how well it fits
 plt.title('Salary vs Experience (Training Set)')
 plt.xlabel('Years of experience')
 plt.ylabel('Salary')
